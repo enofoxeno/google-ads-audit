@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Google Ads Audit | Eno Fox</title>
+<meta name="description" content="Find out which of your Google Ads clicks turn into customers. Get a free review of your account setup and tracking within one business day.">
+
+<!-- Google Tag Manager: replace GTM-XXXXXXX with your container ID -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+<!-- End Google Tag Manager -->
+
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --ink: #17202a;
+    --muted: #5a6572;
+    --line: #e4e0d6;
+    --accent: #0b6b4f;
+    --accent-ink: #ffffff;
+    --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101418;
+      --ink: #eef1f4;
+      --muted: #9aa5b1;
+      --line: #26303a;
+      --accent: #3fbf94;
+      --accent-ink: #08140f;
+      --card: #171d23;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 22px 0; border-bottom: 1px solid var(--line); }
+  header .wrap { display: flex; justify-content: space-between; align-items: center; }
+  .brand { font-weight: 700; letter-spacing: .2px; }
+  .tag { color: var(--muted); font-size: 14px; }
+  .hero { padding: 64px 0 36px; }
+  h1 { font-size: clamp(30px, 6vw, 46px); line-height: 1.12; margin: 0 0 18px; letter-spacing: -.5px; }
+  .sub { font-size: 19px; color: var(--muted); margin: 0 0 32px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 26px;
+  }
+  .card p.lead { margin: 0 0 16px; }
+  #hs-form input[type=email] {
+    width: 100%; padding: 13px 14px; font-size: 17px;
+    border: 1px solid var(--line); border-radius: 8px;
+    background: var(--bg); color: var(--ink);
+  }
+  #hs-form .hs-button, #hs-form input[type=submit] {
+    margin-top: 12px; width: 100%; padding: 14px 18px; font-size: 17px; font-weight: 700;
+    border: 0; border-radius: 8px; cursor: pointer;
+    background: var(--accent); color: var(--accent-ink);
+  }
+  #hs-form label { display: none; }
+  #hs-form ul.hs-error-msgs { list-style: none; padding: 0; margin: 6px 0 0; color: #c0392b; font-size: 14px; }
+  .fine { color: var(--muted); font-size: 14px; margin: 12px 0 0; }
+  section { padding: 40px 0 8px; }
+  h2 { font-size: 22px; margin: 0 0 14px; }
+  ul.points { padding-left: 20px; margin: 0; }
+  ul.points li { margin: 0 0 10px; }
+  footer { margin-top: 56px; padding: 26px 0 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header>
+  <div class="wrap">
+    <span class="brand">Eno Fox</span>
+    <span class="tag">Google Ads &amp; conversion tracking</span>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <h1>Find out which of your Google Ads clicks turn into customers.</h1>
+    <p class="sub">A free review of your account setup and tracking, with specific fixes you can act on.</p>
+
+    <div class="card">
+      <p class="lead">Enter your email and I'll personally review your account setup and send specific fixes within one business day, using read-only access.</p>
+      <div id="hs-form"></div>
+      <p class="fine">No sales call required. I only need read-only access to your account.</p>
+    </div>
+  </div>
+
+  <section>
+    <h2>What the review covers</h2>
+    <ul class="points">
+      <li><strong>Tracking:</strong> whether your conversions are recorded correctly, and whether click IDs and UTMs reach your CRM.</li>
+      <li><strong>Search terms:</strong> whether the queries you pay for match the intent behind your keywords.</li>
+      <li><strong>Structure and spend:</strong> where budget is going, and where it should go instead.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <span>&copy; <span id="yr"></span> Eno Fox</span> &middot;
+    <a href="privacy.html">Privacy</a>
+  </footer>
+</main>
+
+<!-- HubSpot form embed -->
+<script charset="utf-8" src="//js.hsforms.net/forms/embed/v2.js"></script>
+<script>
+(function () {
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // ---- Click ID and UTM capture ------------------------------------------
+  // Hidden-field names must match the HubSpot contact property INTERNAL names.
+  var KEYS = ['gclid','gbraid','wbraid','utm_source','utm_medium','utm_campaign','utm_term','utm_content'];
+  var STORE = 'ads_attr_v1';
+  var DAYS = 90;
+
+  function readStore() {
+    try {
+      var raw = localStorage.getItem(STORE) || getCookie(STORE);
+      if (!raw) return null;
+      var obj = JSON.parse(raw);
+      if (obj.exp && Date.now() > obj.exp) return null;
+      return obj;
+    } catch (e) { return null; }
+  }
+  function writeStore(obj) {
+    var s = JSON.stringify(obj);
+    try { localStorage.setItem(STORE, s); } catch (e) {}
+    try {
+      document.cookie = STORE + '=' + encodeURIComponent(s) +
+        ';max-age=' + (DAYS * 86400) + ';path=/;SameSite=Lax';
+    } catch (e) {}
+  }
+  function getCookie(name) {
+    var m = document.cookie.match('(?:^|; )' + name + '=([^;]*)');
+    return m ? decodeURIComponent(m[1]) : null;
+  }
+
+  var params = new URLSearchParams(location.search);
+  var fromUrl = {};
+  var hasNew = false;
+  KEYS.forEach(function (k) {
+    var v = params.get(k);
+    if (v) { fromUrl[k] = v; hasNew = true; }
+  });
+
+  var data = readStore() || { vals: {}, landing: location.href.split('#')[0] };
+  if (hasNew) {
+    // Last touch: new campaign parameters replace the stored ones.
+    data.vals = fromUrl;
+    data.landing = location.href.split('#')[0];
+  }
+  data.exp = Date.now() + DAYS * 86400000;
+  writeStore(data);
+
+  // Keep a dataLayer record so GTM can use the same values.
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event: 'attribution_ready', attribution: data.vals });
+
+  function fillHidden(form) {
+    var f = (form && form[0]) ? form[0] : form; // jQuery object or DOM element
+    if (!f || !f.querySelector) return;
+    function setField(name, value) {
+      var el = f.querySelector('input[name="' + name + '"]');
+      if (!el || value == null) return;
+      el.value = value;
+      el.dispatchEvent(new Event('input', { bubbles: true }));
+      el.dispatchEvent(new Event('change', { bubbles: true }));
+    }
+    KEYS.forEach(function (k) { setField(k, data.vals[k]); });
+    setField('landing_page_url', data.landing);
+  }
+
+  // ---- HubSpot form --------------------------------------------------------
+  // Replace PORTAL_ID, FORM_ID and region (na1 or eu1) from HubSpot's embed code.
+  if (window.hbspt) {
+    hbspt.forms.create({
+      region: 'na1',
+      portalId: 'PORTAL_ID',
+      formId: 'FORM_ID',
+      target: '#hs-form',
+      onFormReady: fillHidden
+    });
+  }
+})();
+</script>
+</body>
+</html>
