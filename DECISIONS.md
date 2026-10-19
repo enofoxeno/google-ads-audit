@@ -14,7 +14,7 @@
 - Added a short FAQ for the access, call, cost and fit objections.
 
 ## Assets
-- Hero portrait is your photo (desktop, background). On mobile the same photo appears in the About section.
+- Hero portrait is your photo as a single image: a right-hand panel on desktop (1100px and up, hard edge, no fade) and a full-width banner above the headline on mobile and tablet.
 - Video thumbnail is used only when `videoId` is set in `assets/js/main.js`. Until then the video block stays hidden.
 
 ## Technical

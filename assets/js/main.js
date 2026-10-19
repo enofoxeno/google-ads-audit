@@ -151,10 +151,9 @@ function initCtas() {
 // ---- Video: lightweight facade, iframe loads only on click --------------------
 function initVideo() {
   const button = document.getElementById('video');
-  const portrait = document.getElementById('portrait');
   if (!button || !CONFIG.videoId) return;
   button.hidden = false;
-  portrait?.setAttribute('hidden', '');
+  button.closest('.about')?.classList.add('has-media');
   button.addEventListener('click', () => {
     const frame = document.createElement('iframe');
     frame.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(CONFIG.videoId)}?autoplay=1&rel=0&modestbranding=1`;
