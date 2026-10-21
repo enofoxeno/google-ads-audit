@@ -53,6 +53,7 @@
   --section-y: clamp(72px, 9vw, 128px);
   --header-h: 68px;
   --radius: 2px;
+  --portrait: clamp(300px, 25vw, 460px);
 }
 
 @media (min-width: 768px) {
@@ -148,22 +149,33 @@ p { text-wrap: pretty; }
 .hero__form { margin-top: 32px; max-width: 34rem; }
 .fine { margin-top: 14px; font-size: 0.9375rem; color: var(--text-light-muted); line-height: 1.5; }
 
+.hero__proof { max-width: 40rem; padding-top: 28px; border-top: 1px solid var(--rule-dark); }
+.hero__proof blockquote p { font: 400 clamp(1.1rem, 1.02rem + 0.4vw, 1.3rem) / 1.55 var(--font-serif); color: var(--text-light); }
+.hero__proof figcaption { display: flex; align-items: center; gap: 12px; margin-top: 16px; font-size: 0.9375rem; color: var(--text-light-muted); }
+.hero__proof figcaption strong { display: block; color: var(--text-light); font-weight: 600; }
+.stars { width: 94px; height: 17px; flex: none; color: var(--gold-text); }
 .principle { max-width: 40rem; padding: 6px 0 6px 28px; border-left: 1px solid var(--gold); }
 .principle p { font: 400 clamp(1.2rem, 1.05rem + 0.7vw, 1.65rem) / 1.45 var(--font-serif); color: var(--text-light); }
 
 @media (min-width: 1100px) {
-  .hero { min-height: min(880px, calc(100svh - var(--header-h))); display: flex; }
+  .hero { min-height: max(min(880px, calc(100svh - var(--header-h))), calc(var(--portrait) + 400px)); display: flex; }
   .hero__inner { position: static; flex: 1; align-content: space-between; padding-block: clamp(64px, 8vw, 104px) clamp(48px, 7vw, 96px); }
   .hero__copy { max-width: 640px; }
   .hero__intro { display: block; margin-bottom: 0; }
   .hero__intro .eyebrow { margin-bottom: 22px; }
   .hero__media {
-    position: absolute; z-index: -1; top: 50%; transform: translateY(-50%);
+    position: absolute; z-index: -1; top: 104px;
     right: max(var(--gutter), (100% - var(--container)) / 2);
-    width: clamp(340px, 30vw, 460px); height: auto; aspect-ratio: 1;
+    width: var(--portrait); height: auto; aspect-ratio: 1;
     outline: 1px solid var(--rule-dark); outline-offset: 16px;
   }
   .hero__img { object-position: 50% 22%; }
+  .hero__proof {
+    position: absolute; width: var(--portrait); max-width: none; padding-top: 0; border-top: 0; text-align: center;
+    right: max(var(--gutter), (100% - var(--container)) / 2);
+    top: calc(104px + var(--portrait) + 40px);
+  }
+  .hero__proof figcaption { flex-direction: column; gap: 8px; }
 }
 
 /* ---------- HubSpot form skin ---------- */
@@ -222,6 +234,12 @@ p { text-wrap: pretty; }
 @media (min-width: 640px) { .cells--2 { grid-template-columns: repeat(2, 1fr); } .cells--3 { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 960px) { .cells--3 { grid-template-columns: repeat(3, 1fr); } .cell { padding: 40px 36px 44px; } }
 .cta-row { margin-top: clamp(36px, 5vw, 56px); text-align: center; }
+
+/* Client quotes */
+.cell.quote { display: flex; flex-direction: column; justify-content: space-between; gap: 28px; }
+.badge { width: 150px; height: auto; margin: 0 auto 28px; }
+.cell.quote blockquote p { font: 400 clamp(1.15rem, 1.05rem + 0.5vw, 1.45rem) / 1.5 var(--font-serif); color: var(--text-light); max-width: none; }
+.cell.quote .quote__by { font-size: 0.9375rem; color: var(--text-light-muted); max-width: none; }
 
 /* Steps (a real sequence, so numerals earn their place) */
 .steps { counter-reset: step; }
