@@ -14,7 +14,7 @@
 - Added a short FAQ for the access, call, cost and fit objections.
 
 ## Assets
-- Hero portrait is your photo as a single image: a right-hand panel on desktop (1100px and up, hard edge, no fade) and a round portrait beside the eyebrow line above the headline on mobile and tablet.
+- Hero portrait is your photo as a single image: a large round portrait with a gold ring on the right of the hero on desktop (1100px and up), and a smaller round portrait beside the eyebrow line above the headline on mobile and tablet.
 - Video thumbnail is used only when `videoId` is set in `assets/js/main.js`. Until then the video block stays hidden.
 
 ## Technical

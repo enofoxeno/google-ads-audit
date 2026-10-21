@@ -158,11 +158,12 @@ p { text-wrap: pretty; }
   .hero__intro { display: block; margin-bottom: 0; }
   .hero__intro .eyebrow { margin-bottom: 22px; }
   .hero__media {
-    position: absolute; z-index: -1; top: 0; right: 0; bottom: 0; width: auto; height: auto;
-    left: calc(max(var(--gutter), (100% - var(--container)) / 2) + 700px);
-    border: 0; border-radius: 0;
+    position: absolute; z-index: -1; top: 50%; transform: translateY(-50%);
+    right: max(var(--gutter), (100% - var(--container)) / 2);
+    width: clamp(340px, 30vw, 460px); height: auto; aspect-ratio: 1;
+    outline: 1px solid var(--rule-dark); outline-offset: 16px;
   }
-  .hero__img { object-position: 50% 18%; }
+  .hero__img { object-position: 50% 22%; }
 }
 
 /* ---------- HubSpot form skin ---------- */
